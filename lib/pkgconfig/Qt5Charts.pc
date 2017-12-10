@@ -1,0 +1,14 @@
+prefix=/usr/lib64/qt5
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=/usr/include/qt5
+
+
+Name: Qt5 Charts
+Description: Qt Charts module
+Version: 5.7.1
+Libs: -lQt5Charts 
+Libs.private: -lQt5Widgets -lQt5Gui -lQt5Core -lpthread -lGL  
+Cflags: -I${includedir}/QtCharts -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Widgets
+
